@@ -1,0 +1,9 @@
+package org.serratec.filmes;
+
+public class FilmesController {
+
+	public FilmesController() {
+		// TODO Auto-generated constructor stub
+	}
+
+}

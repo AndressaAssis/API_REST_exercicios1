@@ -1,0 +1,52 @@
+package org.serratec.doces;
+
+import java.time.LocalDateTime;
+import java.util.List;
+
+public class ErroResposta {
+	 private int statusCode;
+	 private String mensagem;
+	 private LocalDateTime timestamp;
+	 private List<String> erros;
+	
+	public ErroResposta(int statusCode, String mensagem, LocalDateTime timestamp, List<String> erros) {
+        this.statusCode = statusCode;
+        this.mensagem = mensagem;
+        this.timestamp = timestamp;
+        this.erros = erros;
+	}
+
+	public int getStatusCode() {
+		return statusCode;
+	}
+
+	public void setStatusCode(int statusCode) {
+		this.statusCode = statusCode;
+	}
+
+	public String getMensagem() {
+		return mensagem;
+	}
+
+	public void setMensagem(String mensagem) {
+		this.mensagem = mensagem;
+	}
+
+	public LocalDateTime getTimestamp() {
+		return timestamp;
+	}
+
+	public void setTimestamp(LocalDateTime timestamp) {
+		this.timestamp = timestamp;
+	}
+
+	public List<String> getErros() {
+		return erros;
+	}
+
+	public void setErros(List<String> erros) {
+		this.erros = erros;
+	}
+
+	
+}

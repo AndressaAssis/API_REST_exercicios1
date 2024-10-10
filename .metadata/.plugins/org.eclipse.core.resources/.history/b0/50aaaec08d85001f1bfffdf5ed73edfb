@@ -1,0 +1,48 @@
+package org.serratec.filmes;
+
+import java.util.List;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.web.bind.annotation.DeleteMapping;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PathVariable;
+import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.PutMapping;
+import org.springframework.web.bind.annotation.RequestBody;
+
+import jakarta.persistence.Entity;
+
+@Entity
+public class Filmes {
+	@Autowired
+	private FilmesRepository repositorio;
+	
+	@GetMapping
+	public List<Filmes> obterFilmes() {
+		return repositorio.findAll();
+	}
+	
+	@GetMapping("/{id}")
+	public Filmes obterPorId(@PathVariable Long id) {
+		return repositorio.findById(id).orElse(null);
+	}
+	
+	@PostMapping
+	public Filmes cadastrarFilme(@RequestBody Filmes filme) {
+		repositorio.save(filme);
+		return filme;
+	}
+	
+	@DeleteMapping("/{id}")
+	public void excluirDoce(@PathVariable Long id) {
+		repositorio.deleteById(id);
+	}
+	
+	@PutMapping("/{id}")
+	public Filmes alterarFilme(@PathVariable Long id, @RequestBody Filmes filme) {
+		if (repositorio.existsById(id)) {
+			filme.setId(id);
+			return filme;
+		}
+	}
+}

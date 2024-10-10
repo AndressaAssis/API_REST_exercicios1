@@ -1,0 +1,9 @@
+package org.serratec.cliente;
+
+public class ClientesController {
+
+	public ClientesController() {
+		// TODO Auto-generated constructor stub
+	}
+
+}

@@ -1,0 +1,11 @@
+package ExerciciosPOO;
+
+public class ExerciciosPoo {
+	public static void main(String[] args) {
+		
+		String nome = "Andressa";
+		String sobrenome = "Jandre";
+		
+		System.out.println("Meu nome é: " + nome + "\"Meu sobrenome é: " + sobrenome);
+	}
+}

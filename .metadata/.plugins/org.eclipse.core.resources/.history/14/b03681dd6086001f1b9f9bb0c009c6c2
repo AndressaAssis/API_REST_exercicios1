@@ -1,0 +1,5 @@
+spring.application.name=doces
+spring.datasource.url=jdbc:postgresql://localhost:/doces_DB
+spring.datasource.usename=postgres
+spring.datasource.password=123456
+spring.jpa.hibernate.ddl-auto=update

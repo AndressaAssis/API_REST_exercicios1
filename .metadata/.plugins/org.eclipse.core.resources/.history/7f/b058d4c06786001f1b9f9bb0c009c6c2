@@ -1,0 +1,14 @@
+package org.serratec.doces;
+
+import javax.validation.constraints.NotBlank;
+import javax.validation.constraints.NotNull;
+
+public class CreateUserRequest {
+	@NotNull(message = "Name is mandatory.")
+    private String name;
+
+    @NotBlank(message = "Favorite movie name is mandatory.")
+    private String favoriteMovieTitle;
+    
+    
+}

@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename compilation unit &apos;logica.Pessoa.java&apos; to &apos;EstruturasSequenciais.java&apos;&#x0D;&#x0A;- Original project: &apos;ExerciciosLogica&apos;&#x0D;&#x0A;- Original element: &apos;logica.Pessoa.java&apos;&#x0D;&#x0A;- Renamed element: &apos;logica.EstruturasSequenciais.java&apos;" description="Rename compilation unit &apos;Pessoa.java&apos;" flags="2" id="org.eclipse.jdt.ui.rename.compilationunit" input="/src&lt;logica{Pessoa.java" name="EstruturasSequenciais.java" references="false" stamp="1726153181257" version="1.0"/>
+</session>

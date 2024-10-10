@@ -1,0 +1,14 @@
+//package exercicios;
+
+//public class ExerciciosVariaveis {
+//	public static void main(String[] args) {
+		
+//		int idade = 26;
+//		double peso = 69.9;
+//		double altura = 1.77;
+		
+//		System.out.println("A funcionária Andressa tem: \n" + "Idade: " + idade + "\nAltura: " + altura + "\nPeso: " + peso);
+		
+		
+//	}
+//}

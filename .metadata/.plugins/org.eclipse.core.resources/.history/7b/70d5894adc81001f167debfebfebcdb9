@@ -1,0 +1,9 @@
+package org.serratec.musicas;
+
+public class MusicaController {
+
+	public MusicaController() {
+		// TODO Auto-generated constructor stub
+	}
+
+}

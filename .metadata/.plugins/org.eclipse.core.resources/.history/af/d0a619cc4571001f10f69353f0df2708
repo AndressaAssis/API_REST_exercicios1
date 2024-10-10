@@ -1,0 +1,50 @@
+package entities;
+
+import java.sql.Date;
+
+public class PedidoItens extends Pedido{
+	private int idPedidoItens;
+	private double valUnitario;
+	private int qntProduto;
+	private double valDesconto;
+	
+	public PedidoItens(int idPedido, Date dtEmissao, double valTotal, String observação, int idPedidoItens,
+			double valUnitario, int qntProduto, double valDesconto) {
+		super(idPedido, dtEmissao, valTotal, observação);
+		this.idPedidoItens = idPedidoItens;
+		this.valUnitario = valUnitario;
+		this.qntProduto = qntProduto;
+		this.valDesconto = valDesconto;
+	}
+	public PedidoItens() {
+		
+	}
+	
+	
+	public int getIdPedidoItens() {
+		return idPedidoItens;
+	}
+	public double getValUnitario() {
+		return valUnitario;
+	}
+	public int getQntProduto() {
+		return qntProduto;
+	}
+	public double getValDesconto() {
+		return valDesconto;
+	}
+	public void setIdPedidoItens(int idPedidoItens) {
+		this.idPedidoItens = idPedidoItens;
+	}
+	public void setValUnitario(double valUnitario) {
+		this.valUnitario = valUnitario;
+	}
+	public void setQntProduto(int qntProduto) {
+		this.qntProduto = qntProduto;
+	}
+	public void setValDesconto(double valDesconto) {
+		this.valDesconto = valDesconto;
+	}
+	
+	
+}

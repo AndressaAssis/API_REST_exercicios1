@@ -1,0 +1,57 @@
+package org.serratec.automoveis;
+
+import java.time.LocalDate;
+
+public class AutoMoveis {
+	private Long id;
+	private Tipo tipo;
+	private String modelo;
+	private TipoCombustivel tipoCombustivel;
+	private Marca marca;
+	private Cor cor;
+	private LocalDate anoFabricacao;
+	
+	public Long getId() {
+		return id;
+	}
+	public void setId(Long id) {
+		this.id = id;
+	}
+	public Tipo getTipo() {
+		return tipo;
+	}
+	public void setTipo(Tipo tipo) {
+		this.tipo = tipo;
+	}
+	public String getModelo() {
+		return modelo;
+	}
+	public void setModelo(String modelo) {
+		this.modelo = modelo;
+	}
+	public TipoCombustivel getTipoCombustivel() {
+		return tipoCombustivel;
+	}
+	public void setTipoCombustivel(TipoCombustivel tipoCombustivel) {
+		this.tipoCombustivel = tipoCombustivel;
+	}
+	public Marca getMarca() {
+		return marca;
+	}
+	public void setMarca(Marca marca) {
+		this.marca = marca;
+	}
+	public Cor getCor() {
+		return cor;
+	}
+	public void setCor(Cor cor) {
+		this.cor = cor;
+	}
+	public LocalDate getAnoFabricacao() {
+		return anoFabricacao;
+	}
+	public void setAnoFabricacao(LocalDate anoFabricacao) {
+		this.anoFabricacao = anoFabricacao;
+	}
+	
+}

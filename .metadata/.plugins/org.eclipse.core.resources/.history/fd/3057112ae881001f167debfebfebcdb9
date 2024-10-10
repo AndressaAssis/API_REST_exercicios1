@@ -1,0 +1,28 @@
+package org.serratec.musicas;
+
+import java.util.ArrayList;
+import java.util.List;
+
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.RequestBody;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RestController;
+
+@RestController
+@RequestMapping("/musica")
+public class MusicaController {
+	List<Musica> musicas = new ArrayList<>();
+
+	@GetMapping()
+	public List<Musica> obterMusica() {
+		return musicas;
+	}
+	
+	@PostMapping
+	public Musica cadastrarMusica(@RequestBody Musica musica) {
+		musicas.add(musica);
+		return musica;
+	}
+	
+}

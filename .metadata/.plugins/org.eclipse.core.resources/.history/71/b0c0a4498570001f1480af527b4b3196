@@ -1,0 +1,43 @@
+package entities;
+
+import java.sql.Date;
+
+public class Cliente extends Pessoa{
+	private int idCliente;
+	private String endereço;
+	private String telefone;
+
+	public Cliente(String nome, String cpf, Date dtNascimento, int idCliente, String endereço, String telefone) {
+		super(nome, cpf, dtNascimento);
+		this.idCliente = idCliente;
+		this.endereço = endereço;
+		this.telefone = telefone;
+	}
+
+
+	public int getIdCliente() {
+		return idCliente;
+	}
+	public String getEndereço() {
+		return endereço;
+	}
+	public String getTelefone() {
+		return telefone;
+	}
+	public void setIdCliente(int idCliente) {
+		this.idCliente = idCliente;
+	}
+	public void setEndereço(String endereço) {
+		this.endereço = endereço;
+	}
+	public void setTelefone(String telefone) {
+		this.telefone = telefone;
+	}
+
+
+	@Override
+	public String toString() {
+		return "Cliente [idCliente=" + idCliente + ", endereço=" + endereço + ", telefone=" + telefone + ", getNome()="
+				+ getNome() + ", getCpf()=" + getCpf() + ", getDtNascimento()=" + getDtNascimento() + "]";
+	}
+}

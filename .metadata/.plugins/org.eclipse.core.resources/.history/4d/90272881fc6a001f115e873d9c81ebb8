@@ -1,0 +1,43 @@
+package ExerciciosPOO;
+
+public class ExerciciosPoo {
+	public static void main(String[] args) {
+		//Nome();
+		//ParOuImpar();
+		multiplicacao();
+	}
+	public static void Nome () {
+		String nome = "Andressa";
+		String sobrenome = "Jandre";
+		
+		System.out.println("Meu nome é: " + nome + "\nMeu sobrenome é: " + sobrenome);
+	}
+	public static void ParOuImpar() {
+		int inicio = 1;
+		int fim = 30;
+		
+		System.out.println("Números Pares:");
+		for (int i = inicio; i <= fim; i++) {
+			if (i % 2 == 0) {
+				System.out.println(i);
+			}
+		}
+		System.out.println("Números Impares:");
+		for (int i = inicio; i <= fim; i++) {
+			if (i % 2 != 0) {
+				System.out.println(i);
+			}
+		}
+	}
+	public static void multiplicacao() {
+		
+		int numero = 10;
+		
+		System.out.println("Tabuada de multiplicação do número " + numero + " :");
+		for (int i = 1; i <= 10; i++) {
+			int resultado = numero * i;
+			System.out.println(numero + " x " + i + " = " + resultado);
+		}
+	}
+}
+    

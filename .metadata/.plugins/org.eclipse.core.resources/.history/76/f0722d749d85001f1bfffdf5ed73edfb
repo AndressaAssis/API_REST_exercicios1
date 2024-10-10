@@ -1,0 +1,5 @@
+spring.application.name=pets
+spring.datasource.url=jdbc:postgresql:5432//localhost/filme_DB
+spring.datasource.username=postgres
+spring.datasource.password=123456
+spring.jpa.hibernate.ddl-auto=update

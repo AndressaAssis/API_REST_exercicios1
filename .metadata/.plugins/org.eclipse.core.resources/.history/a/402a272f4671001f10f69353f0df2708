@@ -1,0 +1,48 @@
+package entities;
+
+import java.sql.Date;
+
+public abstract class Pedido {
+	protected int idPedido;
+	protected Date dtEmissao;
+	protected double valTotal;
+	protected String observação;
+	
+	public Pedido(int idPedido, Date dtEmissao, double valTotal, String observação) {
+		super();
+		this.idPedido = idPedido;
+		this.dtEmissao = dtEmissao;
+		this.valTotal = valTotal;
+		this.observação = observação;
+	}
+	public Pedido() {
+		
+	}
+	
+	
+	public int getIdPedido() {
+		return idPedido;
+	}
+	public Date getDtEmissao() {
+		return dtEmissao;
+	}
+	public double getValTotal() {
+		return valTotal;
+	}
+	public String getObservação() {
+		return observação;
+	}
+	public void setIdPedido(int idPedido) {
+		this.idPedido = idPedido;
+	}
+	public void setDtEmissao(Date dtEmissao) {
+		this.dtEmissao = dtEmissao;
+	}
+	public void setValTotal(double valTotal) {
+		this.valTotal = valTotal;
+	}
+	public void setObservação(String observação) {
+		this.observação = observação;
+	}
+	
+}
